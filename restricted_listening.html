@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="charset=utf-8"/>
+        <title>MEX Tools - Restricted Listening</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div id="divRestrictedListening">
+            <h1>
+                <a href="index.html">MEX Tools</a> → Rajoitettu kuuntelu
+            </h1>
+    
+            <h2>Rajoitetun kuuntelun luominen</h2>
+            <p>
+                Tämä työkalu generoi XML-koodin rajoitettua kuuntelua varten.
+            </p>
+
+            <p>
+                <table>
+                    <tr>
+                        <td>Liitetiedoston nimi</td>
+                        <td>
+                            <input 
+                                id="txtSource" 
+                                type="file" 
+                                accept=".mp3,.wav,.ogg"
+                            />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Äänitteen otsikko</td>
+                        <td>
+                            <input id="txtTitle"/> 
+                            (valinnainen)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Kuuntelukertojen lukumäärä</td>
+                        <td>
+                            <input
+                                id="txtTimes"
+                                type="number"
+                                value="0"
+                                min="0"
+                            /> 
+                            (0 = rajoittamaton)
+                        </td>
+                    </tr>
+                </table>
+            </p>
+
+            <p>
+                <button id="btnGenerateCode" onclick="generateCode(Modules.RESTRICTED_LISTENING)">
+                    Generoi XML-koodi
+                </button>
+            </p>
+        </div>
+        
+        <div id="divOutput">
+            <h3>Kopioitava koodi</h3>
+            <pre id="output" class="output"> s</pre>
+        </div>
+    </body>
+
+    <script src="main.js"></script>
+</html>
