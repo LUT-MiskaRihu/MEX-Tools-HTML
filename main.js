@@ -5,8 +5,87 @@
  * Last Modified: 01.12.2022
  */
 
+class ReferenceGenerator {
+    author = "";
+    title = "";
+    publisher = "";
+    publication = "";
+    howpublished = "";
+    url = "";
+    publication_date = ""; // yyyy-mm-dd
+    reference_date = ""; // yyyy-mm-dd
+    translator = "";
+    modified_by = "";
+    note = "";
+
+    constructor()
+    {
+        
+    }
+
+    set author(author)
+    {
+        this.author = author;
+    }
+
+    set title(title)
+    {
+        this.title = title;
+    }
+
+    set publisher(publisher)
+    {
+        this.publisher = publisher;
+    }
+
+    set publisher(publication)
+    {
+        this.publication = publication;
+    }
+
+    set publisher(howpublished)
+    {
+        this.howpublished = howpublished;
+    }
+
+    set publisher(url)
+    {
+        this.url = url;
+    }
+
+    set publisher(publication_date)
+    {
+        this.publication_date = publication_date;
+    }
+
+    set publisher(reference_date)
+    {
+        this.reference_date = reference_date;
+    }
+
+    set publisher(translator)
+    {
+        this.translator = translator;
+    }
+
+    set publisher(modified_by)
+    {
+        this.modified_by = modified_by;
+    }
+
+    set publisher(note)
+    {
+        this.note = note;
+    }
+
+    generateCode()
+    {
+        
+    }
+}
+
 class RestrictedListening {
-    src = "audio.mp3";
+    src = "";
     times = 0;
     title = "";
 
@@ -60,6 +139,7 @@ class RestrictedListening {
 
 class Modules {
     RESTRICTED_LISTENING = 1;
+    REFERENCE_GENERATOR = 2;
 }
 
 function printCode(code)
