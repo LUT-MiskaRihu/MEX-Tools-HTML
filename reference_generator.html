@@ -4,6 +4,7 @@
         <meta content="charset=utf-8"/>
         <title>MEX Tools - Restricted Listening</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="reference_generator.css">
     </head>
 
     <body>
@@ -19,18 +20,18 @@
 
             <p>
                 Lähde:
-                <span id="author" contenteditable="true" placeholder="Author"></span>.
-                <i><span id="title" contenteditable="true" placeholder="Title"></span></i>.
-                <span id="publisher" contenteditable="true" placeholder="Publisher"></span>.
-                <span id="publication" contenteditable="true" placeholder="Publication"></span>.
-                <span id="howpublished" contenteditable="true" placeholder="How published"></span>.
-                <span id="url" contenteditable="true" placeholder="url"></span>.
+                <span id="author" class="editable" contenteditable="true" placeholder="Author"></span>.
+                <i><span id="title" class="editable" contenteditable="true" placeholder="Title"></span></i>.
+                <span id="publisher" class="editable" contenteditable="true" placeholder="Publisher"></span>.
+                <span id="publication" class="editable" contenteditable="true" placeholder="Publication"></span>.
+                <span id="howpublished" class="editable" contenteditable="true" placeholder="How published"></span>.
+                <span id="url" class="editable" contenteditable="true" placeholder="url"></span>.
                 Julkaistu: <span><input id="publication-date" type="date" contenteditable="true" /></span>.
                 Viitattu: <span><input id="reference-date" type="date" contenteditable="true" /></span>.
-                Käännös: <span id="translator" contenteditable="true" placeholder="Translator"></span>.
-                Muokkaus: <span id="modified-by" contenteditable="true" placeholder="Modified by"></span>.
-                <span id="note" contenteditable="true" placeholder="free text"></span>
-              </p>
+                Käännös: <span id="translator" class="editable" contenteditable="true" placeholder="Translator"></span>.
+                Muokkaus: <span id="modified-by" class="editable" contenteditable="true" placeholder="Modified by"></span>.
+                <span id="note" class="editable" contenteditable="true" placeholder="free text"></span>
+            </p>
 
             <p>
                 <button id="btnGenerateCode" onclick="generateCode(Modules.REFERENCE_GENERATOR)">

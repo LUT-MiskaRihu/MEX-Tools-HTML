@@ -1,0 +1,11 @@
+/* Reference Generator */
+.editable {
+    border: 0;
+    text-align: center;
+    display: inline-block;
+}
+
+[contenteditable=true]:empty:before {
+    content: attr(placeholder);
+    color: gray;
+}
