@@ -34,6 +34,99 @@
             </p>
 
             <p>
+                <table>
+                    <tr>
+                        <td>
+                            Kirjailija(t):
+                        </td>
+                        <td>
+                            <span id="editableAuthor" class="editable" contenteditable="true" placeholder="Matti Meikäläinen"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Otsikko:
+                        </td>
+                        <td>
+                            <i><span id="editableTitle" class="editable" contenteditable="true" placeholder="Title (e.g. Tutkimuskirja)"></span></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Julkaisija/kustantaja:
+                        </td>
+                        <td>
+                            <span id="editablePublisher" class="editable" contenteditable="true" placeholder="Publisher (e.g. Otava)"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Julkaisu:
+                        </td>
+                        <td>
+                            <span id="editablePublication" class="editable" contenteditable="true" placeholder="Publication (e.g. Helsingin Sanomat)"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Julkaisumuoto:
+                        </td>
+                        <td>
+                            <span id="editableHowpublished" class="editable" contenteditable="true" placeholder="How published (e.g. YouTube-video)"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            URL:
+                        </td>
+                        <td>
+                            <span id="editableUrl" class="editable" contenteditable="true" placeholder="URL (e.g. https://www.hs.fi)"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Julkaistu:
+                        </td>
+                        <td>
+                            <input id="datePublicationDate" type="date"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Viitattu:
+                        </td>
+                        <td>
+                            <input id="dateReferenceDate" type="date"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Kääntäjä(t):
+                        </td>
+                        <td>
+                            <span id="editableTranslator" class="editable" contenteditable="true" placeholder="Translator"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Muokkaaja(t):
+                        </td>
+                        <td>
+                            <span id="editableModifiedBy" class="editable" contenteditable="true" placeholder="Modified by"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Muuta:
+                        </td>
+                        <td>
+                            <span id="editableNote" class="editable" contenteditable="true" placeholder="Free text field. Use this for additional notes."></span>
+                        </td>
+                    </tr>
+                </table>
+            </p>
+            
+            <p>
                 <button id="btnGenerateCode" onclick="generateCode(Modules.REFERENCE_GENERATOR)">
                     Generoi XML-koodi
                 </button>
