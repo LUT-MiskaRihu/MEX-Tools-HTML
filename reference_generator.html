@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="charset=utf-8"/>
+        <title>MEX Tools - Restricted Listening</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div id="divReferenceGenerator">
+            <h1>
+                <a href="index.html">MEX Tools</a> → Lähdetietojen muokkaus
+            </h1>
+    
+            <h2>Lähdetietojen muokkaus</h2>
+            <p>
+                Tämä työkalu generoi XML-koodin lähdetietoja varten.
+            </p>
+
+            <p>
+                Lähde:
+                <span id="author" contenteditable="true" placeholder="Author"></span>.
+                <i><span id="title" contenteditable="true" placeholder="Title"></span></i>.
+                <span id="publisher" contenteditable="true" placeholder="Publisher"></span>.
+                <span id="publication" contenteditable="true" placeholder="Publication"></span>.
+                <span id="howpublished" contenteditable="true" placeholder="How published"></span>.
+                <span id="url" contenteditable="true" placeholder="url"></span>.
+                Julkaistu: <span><input id="publication-date" type="date" contenteditable="true" /></span>.
+                Viitattu: <span><input id="reference-date" type="date" contenteditable="true" /></span>.
+                Käännös: <span id="translator" contenteditable="true" placeholder="Translator"></span>.
+                Muokkaus: <span id="modified-by" contenteditable="true" placeholder="Modified by"></span>.
+                <span id="note" contenteditable="true" placeholder="free text"></span>
+              </p>
+
+            <p>
+                <button id="btnGenerateCode" onclick="generateCode(Modules.REFERENCE_GENERATOR)">
+                    Generoi XML-koodi
+                </button>
+            </p>
+        </div>
+        
+        <div id="divOutput">
+            <h3>Kopioitava koodi</h3>
+            <pre id="output" class="output"> </pre>
+        </div>
+    </body>
+
+    <script src="main.js"></script>
+</html>
